@@ -27,7 +27,7 @@ mongoose
   
 // app.use(express.urlencoded({extended:true}));
 app.use(express.json());
- app.use(express.static("build"));
+app.use(express.static("build"));
 app.post("/order",async (req,res)=>{
 
   let data=req.body;
